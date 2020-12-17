@@ -54,8 +54,7 @@ const FormTarea = () => {
     //validar si se esta agregando o editando una tarea
     if (tareaseleccionada === null) {
       //agregar nueva tarea al state de tareas
-      tarea.estado = false;
-      tarea.proyectoId = proyectoActual.id;
+      tarea.proyecto = proyectoActual._id;
       tarea.id = uuid();
       agregarTarea(tarea);
     } else {
@@ -64,7 +63,7 @@ const FormTarea = () => {
       limiarTarea();
     }
 
-    obtenerTareas(proyectoActual.id);
+    obtenerTareas(proyectoActual._id);
     //reiniciar form
     guardarTarea({
       nombre: "",
