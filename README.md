@@ -29,6 +29,6 @@ Your app is ready to be deployed!
 
 See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-##After clone
+###After clone
 1. npm install
 2. change the .env and .env.development.local variable
